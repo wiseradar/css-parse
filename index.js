@@ -258,7 +258,7 @@ module.exports = function(css, options){
     var vendor = m[1];
 
     // identifier
-    var m = match(/^([-\w]+)\s*/);
+    var m = match(/^'?([-\w]+)'?\s*/);
     if (!m) return error("@keyframes missing name");
     var name = m[1];
 
